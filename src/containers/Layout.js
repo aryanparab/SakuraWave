@@ -28,9 +28,9 @@ class CustomLayout extends React.Component {
       <div className="fixed-side-navbar">
         <ul className="nav flex-column">
           <li className="item">
-            <Link className="nav-link" to="/">
+            <HashLink className="nav-link" to="#home">
               <span>Home</span>
-            </Link>
+            </HashLink>
           </li>
           <li className="item">
             <HashLink className="nav-link" to="#services">
@@ -47,68 +47,7 @@ class CustomLayout extends React.Component {
               <span>Contact Us</span>
             </HashLink>
           </li>
-          <li className="item">
-          {authenticated ? (
-            <React.Fragment>
 
-                <Link className="nav-link" to="/profile">
-                  <span>Profile</span>
-            </Link>
-                <Dropdown
-                  icon="cart"
-                  loading={loading}
-                  text={`${cart !== null ? cart.order_items.length : 0}`}
-                  pointing
-                  className="item"
-                >
-                  <Dropdown.Menu>
-                    {cart !== null ? (
-                      <React.Fragment>
-                        {cart.order_items.map(order_item => {
-                          return (
-                            <Dropdown.Item className="nav-link" key={order_item.id}>
-                              {order_item.quantity} x {order_item.item.title}
-                            </Dropdown.Item>
-                          );
-                        })}
-                        {cart.order_items.length < 1 ? (
-                          <Dropdown.Item>No items in your cart</Dropdown.Item>
-                        ) : null}
-                        <Dropdown.Divider></Dropdown.Divider>
-
-                        <Dropdown.Item
-                          icon="arrow right"
-                          text="Checkout"
-
-                          onClick={() =>
-                            this.props.history.push("/order-summary")
-                          }
-                        />
-                      </React.Fragment>
-                    ) : (
-                      <Dropdown.Item>No items in your cart</Dropdown.Item>
-                    )}
-                  </Dropdown.Menu>
-                </Dropdown>
-
-                <Link className="nav-link"  header onClick={() => this.props.logout()}>
-                <span>  Logout
-                </span>
-                </Link>
-            </React.Fragment>
-          ) : (
-              <>
-              <Link className="nav-link" to="/login">
-                <span>Login</span>
-              </Link>
-
-              <Link className="nav-link" to="/signup">
-                <span>Signup</span>
-              </Link>
-              </>
-
-          )}
-          </li>
         </ul>
       </div>
 
@@ -138,3 +77,66 @@ export default withRouter(
     mapDispatchToProps
   )(CustomLayout)
 );
+
+// <li className="item">
+// {authenticated ? (
+//   <React.Fragment>
+//
+//       <Link className="nav-link" to="/profile">
+//         <span>Profile</span>
+//   </Link>
+//       <Dropdown
+//         icon="cart"
+//         loading={loading}
+//         text={`${cart !== null ? cart.order_items.length : 0}`}
+//         pointing
+//         className="item"
+//       >
+//         <Dropdown.Menu>
+//           {cart !== null ? (
+//             <React.Fragment>
+//               {cart.order_items.map(order_item => {
+//                 return (
+//                   <Dropdown.Item className="nav-link" key={order_item.id}>
+//                     {order_item.quantity} x {order_item.item.title}
+//                   </Dropdown.Item>
+//                 );
+//               })}
+//               {cart.order_items.length < 1 ? (
+//                 <Dropdown.Item>No items in your cart</Dropdown.Item>
+//               ) : null}
+//               <Dropdown.Divider></Dropdown.Divider>
+//
+//               <Dropdown.Item
+//                 icon="arrow right"
+//                 text="Checkout"
+//
+//                 onClick={() =>
+//                   this.props.history.push("/order-summary")
+//                 }
+//               />
+//             </React.Fragment>
+//           ) : (
+//             <Dropdown.Item>No items in your cart</Dropdown.Item>
+//           )}
+//         </Dropdown.Menu>
+//       </Dropdown>
+//
+//       <Link className="nav-link"  header onClick={() => this.props.logout()}>
+//       <span>  Logout
+//       </span>
+//       </Link>
+//   </React.Fragment>
+// ) : (
+//     <>
+//     <Link className="nav-link" to="/login">
+//       <span>Login</span>
+//     </Link>
+//
+//     <Link className="nav-link" to="/signup">
+//       <span>Signup</span>
+//     </Link>
+//     </>
+//
+// )}
+// </li>
