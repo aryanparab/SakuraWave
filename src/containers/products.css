@@ -1,7 +1,9 @@
 .img {
+
+  margin: 25px;
   padding: 2px;
-  width: 40rem;
-  height: 25rem;
+  width: 25rem;
+  height: 20rem;
   object-fit: cover;
   transition: all 1.1s ease;
 }

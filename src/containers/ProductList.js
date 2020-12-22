@@ -53,48 +53,62 @@ class ProductList extends React.Component {
 
     const { data, error, loading } = this.state;
     return (
-      <>
-        {error && (
-          <Message
-            error
-            header="There was some errors with your submission"
-            content={JSON.stringify(error)}
-          />
-        )}
-        {loading && (
-          <Segment>
-            <Dimmer active inverted>
-              <Loader inverted>Loading</Loader>
-            </Dimmer>
 
-            <Image src="/images/wireframe/short-paragraph.png" />
-          </Segment>
-        )}
-
-
+        // {error && (
+        //   <Message
+        //     error
+        //     header="There was some errors with your submission"
+        //     content={JSON.stringify(error)}
+        //   />
+        // )}
+        // {loading && (
+        //   <Segment>
+        //     <Dimmer active inverted>
+        //       <Loader inverted>Loading</Loader>
+        //     </Dimmer>
+        //
+        //     <Image src="/images/wireframe/short-paragraph.png" />
+        //   </Segment>
+        // )}
+        <>
         <div className="parallax-content projects-content" id="portfolio">
-          <h1 className="head">Our Instagram</h1>
-          <div className = "row">
-         {data.map(item => {
-            return (
-              <img src = {item.image} className="img" />
-
-                // <Card style={{ backgroundColor: "yellow" }}>
-                //   <Card.Img variant="top" src={item.image} />
-                //   <Card.Body>
-                //     <Card.Title>{item.price}</Card.Title>
-                //     <Card.Text>{item.title}</Card.Text>
-                //     <Button variant="primary"   onClick={() => this.handleAddToCart(item.slug)}>
-                //       Buy Now
-                //     </Button>
-                //   </Card.Body>
-                // </Card>
-
-              );
-            })}
-  </div>
-</div>
+        <h1 className="head">Our Instagram</h1>
+        <div className="row">
+          <img src="../assets/img/bleed.jpg" className="img" />
+          <img src="../assets/img/jin.png" className="img" />
+          <img src="../assets/img/golden.jpg" className="img" />
+        </div>
+        <div className="row">
+          <img src="../assets/img/wander.png" className="img" />
+          <img src="../assets/img/1st-item.jpg" className="img" />
+          <img src="../assets/img/1st-item.jpg" className="img" />
+        </div>
+      </div>
       </>
+
+        // <div className="parallax-content projects-content" id="portfolio">
+        //   <h1 className="head">Our Instagram</h1>
+        //   <div className = "row">
+        //  {data.map(item => {
+        //     return (
+        //       <img src = {item.image} className="img" />
+        //
+        //         <Card style={{ backgroundColor: "yellow" }}>
+        //           <Card.Img variant="top" src={item.image} />
+        //           <Card.Body>
+        //             <Card.Title>{item.price}</Card.Title>
+        //             <Card.Text>{item.title}</Card.Text>
+        //             <Button variant="primary"   onClick={() => this.handleAddToCart(item.slug)}>
+        //               Buy Now
+        //             </Button>
+        //           </Card.Body>
+        //         </Card>
+        //
+        //       );
+        //     })}
+//   </div>
+// </div>
+
     );
   }
 }

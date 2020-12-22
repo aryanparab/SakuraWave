@@ -2,3 +2,13 @@
   transform: scale(1.08);
   transition: all 0.25s ease;
 }
+
+.logo {
+  width: 8rem;
+  padding-bottom: 10px;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  transition: all 0.25s ease;
+}

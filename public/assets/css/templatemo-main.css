@@ -183,7 +183,7 @@ a:hover {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
-  background-image: url(../img/652335.jpg);
+  background-image: url(../img/wave.gif);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -246,7 +246,7 @@ h4,
 .projects-content {
   padding: 6%;
   padding-top: 10rem;
-  background-image: url(../img/original.gif);
+  background-image: url(../img/sakura.gif);
 }
 
 .projects-content .item img {
@@ -365,8 +365,8 @@ section {
 .contact-content {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 7rem;
-  background-image: url(../img/793.png);
+  padding-top: 5rem;
+  background-image: url(../img/meet.gif);
 }
 
 .contact-form {

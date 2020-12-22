@@ -8,6 +8,7 @@ export default function () {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
+              <img src="./logo.png" className="logo" />
               <div className="primary-button">
                 <a href="#home">Back To Top</a>
               </div>
