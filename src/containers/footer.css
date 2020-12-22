@@ -1,0 +1,4 @@
+.social:hover {
+  transform: scale(1.08);
+  transition: all 0.25s ease;
+}

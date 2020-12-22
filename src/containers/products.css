@@ -1,0 +1,19 @@
+.img {
+  padding: 2px;
+  width: 40rem;
+  height: 25rem;
+  object-fit: cover;
+  transition: all 1.1s ease;
+}
+.img:hover {
+  transform: scale(1.08);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.head {
+  color: white;
+}
