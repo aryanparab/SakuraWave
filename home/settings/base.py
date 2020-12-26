@@ -1,6 +1,8 @@
 import os
 import config
+import django_heroku
 
+django_heroku.settings(locals())
 BASE_DIR = os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'

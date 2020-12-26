@@ -1,1 +1,1 @@
-web: gunicorn home.wsgi --log-file -
+web: gunicorn django-react-ecommerce-master.wsgi --log-file -
