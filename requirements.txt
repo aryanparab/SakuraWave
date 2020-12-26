@@ -29,6 +29,7 @@ decorator==4.4.2
 defusedxml==0.6.0
 distlib==0.3.1
 dj-database-url==0.5.0
+dj-static==0.0.6
 Django==3.1.2
 django-allauth==0.43.0
 django-cors-headers==3.6.0
@@ -128,6 +129,7 @@ spacy==2.3.2
 SpeechRecognition==3.8.1
 sqlparse==0.4.1
 srsly==1.0.2
+static3==0.7.0
 statsmodels==0.11.1
 stevedore==3.2.2
 streamlit==0.63.1
