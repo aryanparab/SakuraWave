@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.5.3",
+    "netlify-cli": "^2.69.11",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-bootstrap": "^1.4.0",
@@ -20,7 +21,6 @@
     "semantic-ui-react": "^0.87.2"
   },
   "scripts": {
-    "start": "node index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
