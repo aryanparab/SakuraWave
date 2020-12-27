@@ -2,7 +2,8 @@
 import config
 from .base import *
 
-ALLOWED_HOSTS += ['127.0.0.1',"sakurawave.herokuapp.com"]
+ALLOWED_HOSTS = ["sakurawave.in" , '127.0.0.1',"sakurawave.github.io"]
+
 DEBUG = False
 
 WSGI_APPLICATION = 'home.wsgi.dev.application'
