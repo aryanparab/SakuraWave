@@ -54,7 +54,7 @@ Jinja2==2.11.2
 jmespath==0.10.0
 joblib==0.16.0
 jsonschema==3.2.0
-j
+
 kiwisolver==1.2.0
 lxml==4.5.2
 MarkupSafe==1.1.1
