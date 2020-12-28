@@ -1,6 +1,6 @@
 import os
 import config
-import django_heroku
+import django-heroku
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
