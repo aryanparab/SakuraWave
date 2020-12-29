@@ -2,7 +2,7 @@
 import config
 from .base import *
 
-ALLOWED_HOSTS = ["sakurawave.in" , '127.0.0.1',"sakurawave.github.io"]
+ALLOWED_HOSTS = ["sakurawave.in" , '127.0.0.1',"sakurawave.github.io","sakurawave.herokuapp.com"]
 
 DEBUG = False
 
