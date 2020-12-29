@@ -6,7 +6,7 @@ ALLOWED_HOSTS = ["sakurawave.in" , '127.0.0.1',"sakurawave.github.io"]
 
 DEBUG = False
 
-WSGI_APPLICATION = 'home.wsgi.dev.application'
+WSGI_APPLICATION = 'home.wsgi.application'
 
 DATABASES = {
     'default': {
