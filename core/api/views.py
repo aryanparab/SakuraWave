@@ -19,8 +19,6 @@ from .serializers import (
     PaymentSerializer
 )
 from core.models import Item, OrderItem, Order, Address, Payment, Coupon, Refund, UserProfile, Variation, ItemVariation
-
-
 import stripe
 
 #stripe.api_key = settings.STRIPE_SECRET_KEY
